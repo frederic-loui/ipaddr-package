@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	dh_auto_test -- --system=custom --test-args "{interpreter} $(CURDIR)/ipaddr_test.py"
+
+override_dh_auto_clean:
+	rm -rf $(CURDIR)/__pycache__
+	rm -rf $(CURDIR)/build
+	dh_clean

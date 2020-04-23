@@ -1,0 +1,3 @@
+Tests: py3
+Depends: python3-all, @
+Restrictions: allow-stderr
