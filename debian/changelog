@@ -1,3 +1,9 @@
+python-ipaddr (2.2.0-5) unstable; urgency=medium
+
+  * bumped ton version 2.2.0-5 in changelog
+
+ -- Frederic LOUI <frederic.loui@renater.fr>  Fri, 24 Apr 2020 06:43:02 +0000
+
 python-ipaddr (2.2.0-4ubuntu1) unstable; urgency=medium
 
   * re-activated python-ipaddr 
